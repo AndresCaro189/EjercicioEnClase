@@ -16,10 +16,11 @@ public class BasicCalculatorTest {
             "0,    1,   1",
             "1,    2,   3",
             "49,  51, 100",
-            "1,  100, null"
+            "1,  100, 101"
     })
     public void severalSums(Long first, Long second, Long expectedResult) {
         assertEquals(expectedResult, basicCalculator.sum(first, second),
                 () -> first + " + " + second + " should equal " + expectedResult);
     }
+
 }
