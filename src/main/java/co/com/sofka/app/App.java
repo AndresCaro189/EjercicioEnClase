@@ -31,7 +31,13 @@ public class App {
 
         BasicCalculator calculator = new BasicCalculator();
         Long result = calculator.sum( number1, number2 );
+        Long result2 = calculator.rest( number1, number2 );
+        Long result3 = calculator.mul( number1, number2 );
+        Long result4 = calculator.div( number1, number2 );
 
         System.out.println( number1 + " + " + number2 + " = " + result );
+        System.out.println( number1 + " - " + number2 + " = " + result2 );
+        System.out.println( number1 + " * " + number2 + " = " + result3 );
+        System.out.println( number1 + " / " + number2 + " = " + result4 );
     }
 }
